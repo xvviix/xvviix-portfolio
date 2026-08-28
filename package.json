@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\" && next dev --hostname 0.0.0.0",
     "build": "next build",
-    "build:github": "GITHUB_PAGES=true NEXT_PUBLIC_SITE_URL=https://xvviix.github.io next build",
+    "build:github": "env GITHUB_PAGES=true NEXT_PUBLIC_SITE_URL=https://xvviix.github.io/xvviix-portfolio NEXT_PUBLIC_ASSET_BASE=/xvviix-portfolio sh -c \"next build && node scripts/prefix-assets.mjs\"",
     "start": "next start --hostname 0.0.0.0",
     "check": "npm run build && npm run audit:deps",
     "audit:deps": "npm audit --omit=dev"

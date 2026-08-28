@@ -27,7 +27,9 @@ const nextConfig = {
     root: process.cwd(),
   },
   outputFileTracingRoot: process.cwd(),
-  ...(isGithubPagesBuild ? { output: 'export', trailingSlash: true } : {}),
+  ...(isGithubPagesBuild
+    ? { output: 'export', trailingSlash: true, basePath: '/xvviix-portfolio' }
+    : {}),
   allowedDevOrigins: ['127.0.0.1', 'localhost'],
   images: {
     formats: ['image/avif', 'image/webp'],

@@ -1,6 +1,6 @@
 export const dynamic = 'force-static';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://xvviix.github.io';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://xvviix.github.io/xvviix-portfolio';
 
 // Explicitly welcome AI/generative-engine crawlers so the site can be cited
 // by ChatGPT, Perplexity, Claude, Gemini and friends (GEO).

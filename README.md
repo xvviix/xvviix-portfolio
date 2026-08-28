@@ -7,10 +7,10 @@ A production-ready bilingual portfolio built with **Next.js 16**, **React Three 
 Set `NEXT_PUBLIC_SITE_URL` (build time) to your production domain so `robots.txt`, `sitemap.xml` and Open Graph/Twitter cards resolve to absolute URLs — for example:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://xvviix.github.io npm run build
+NEXT_PUBLIC_SITE_URL=https://xvviix.github.io/xvviix-portfolio npm run build
 ```
 
-Unset, it falls back to `https://xvviix.github.io`.
+Unset, it falls back to `https://xvviix.github.io/xvviix-portfolio`.
 
 ## Project structure
 
@@ -110,7 +110,7 @@ For the XVVIIX GitHub Pages domain, use:
 npm run build:github
 ```
 
-This sets `NEXT_PUBLIC_SITE_URL=https://xvviix.github.io` and enables static export settings for GitHub Pages.
+This sets `NEXT_PUBLIC_SITE_URL=https://xvviix.github.io/xvviix-portfolio` and enables static export settings for GitHub Pages.
 
 ## Production
 

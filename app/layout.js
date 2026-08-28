@@ -1,17 +1,31 @@
 import './globals.css';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://xvviix.github.io';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://xvviix.github.io/xvviix-portfolio';
+// Public-asset URL prefix: empty for dev/Vercel (site at root),
+// '/xvviix-portfolio' for the GitHub Pages build (subpath repo).
+const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? '';
+// Prefixed asset URLs, injected as CSS variables so globals.css (which is
+// shared between builds) can reference public assets with the right prefix.
+const assetVars = ASSET_BASE
+  ? {
+      '--font-manrope-url': `url('${ASSET_BASE}/fonts/manrope.woff2')`,
+      '--font-vazirmatn-url': `url('${ASSET_BASE}/fonts/vazirmatn.woff2')`,
+      '--palace-bg-url': `url('${ASSET_BASE}/images/palace-bg-1920.webp')`,
+      '--cursor-idle-url': `url('${ASSET_BASE}/cursors/luxury-gold-cursor.svg')`,
+      '--cursor-active-url': `url('${ASSET_BASE}/cursors/luxury-gold-interactive-v2.svg')`,
+    }
+  : undefined;
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: 'XVVIIX — Creative Developer',
   description: 'Cinematic websites, interactive experiences and useful digital products by XVVIIX.',
   keywords: ['creative developer', 'web design', 'three.js', 'interactive portfolio', 'XVVIIX'],
-  manifest: '/manifest.webmanifest',
+  manifest: 'manifest.webmanifest',
   alternates: { canonical: '/' },
   icons: {
-    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
-    apple: [{ url: '/icons/apple-touch-icon.png', sizes: '180x180' }],
+    icon: [{ url: 'icon.svg', type: 'image/svg+xml' }],
+    apple: [{ url: 'icons/apple-touch-icon.png', sizes: '180x180' }],
   },
   openGraph: {
     title: 'XVVIIX — Creative Developer',
@@ -21,13 +35,13 @@ export const metadata = {
     url: SITE_URL,
     locale: 'en_US',
     alternateLocale: ['fa_IR'],
-    images: [{ url: '/images/og-card.jpg', width: 1200, height: 630, alt: 'XVVIIX — Creative Developer' }],
+    images: [{ url: 'images/og-card.jpg', width: 1200, height: 630, alt: 'XVVIIX — Creative Developer' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'XVVIIX — Creative Developer',
     description: 'Digital experiences engineered to be remembered.',
-    images: ['/images/og-card.jpg'],
+    images: ['images/og-card.jpg'],
   },
 };
 
@@ -83,7 +97,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning style={assetVars}>
       <head>
         {/* Apply the returning visitor's language before first paint —
             prevents an LTR/EN flash for returning Persian users. */}
@@ -92,11 +106,11 @@ export default function RootLayout({ children }) {
             __html: "try{if(localStorage.getItem('xvviix-lang')==='fa'){document.documentElement.lang='fa';document.documentElement.dir='rtl';}}catch(e){}",
           }}
         />
-        <link rel="preload" href="/fonts/manrope.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href={`${ASSET_BASE}/fonts/manrope.woff2`} as="font" type="font/woff2" crossOrigin="anonymous" />
         {/* Vazirmatn is intentionally NOT preloaded: it is only needed after a
             visitor switches to Persian, and font-display:swap loads it on demand. */}
-        <link rel="preload" href="/fonts/helvetiker_regular.typeface.json" as="fetch" crossOrigin="anonymous" />
-        <link rel="preload" href="/images/palace-bg-1920.webp" as="image" type="image/webp" />
+        <link rel="preload" href={`${ASSET_BASE}/fonts/helvetiker_regular.typeface.json`} as="fetch" crossOrigin="anonymous" />
+        <link rel="preload" href={`${ASSET_BASE}/images/palace-bg-1920.webp`} as="image" type="image/webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

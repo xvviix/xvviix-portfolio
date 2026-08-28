@@ -2,7 +2,9 @@
 // Single source of truth so choreography stays in sync across every chapter.
 
 
-export const FONT = '/fonts/helvetiker_regular.typeface.json';
+// Prefixed at build time: '' for dev/Vercel (root), '/xvviix-portfolio' for the
+// GitHub Pages subpath build.
+export const FONT = `${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/fonts/helvetiker_regular.typeface.json`;
 
 export const letterData = [
   { char: 'X', x: -2.7 },
@@ -13,12 +15,14 @@ export const letterData = [
   { char: 'X', x: 2.4 },
 ];
 
+const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? '';
+
 export const featuredProjects = [
-  { title: 'DASTIN', image: '/projects/Dastin.jpg', accent: '#b9782d' },
-  { title: 'CHRONA', image: '/projects/chrona-bio.jpg', accent: '#43c9a4' },
-  { title: 'FORMA OS', image: '/projects/forma-os.jpg', accent: '#806be8' },
-  { title: 'LAJEVARD', image: '/projects/lajevard-tea-house.jpg', accent: '#d0a540' },
-  { title: 'AETHER', image: '/projects/aether.jpg', accent: '#637cf0' },
+  { title: 'DASTIN', image: `${ASSET_BASE}/projects/Dastin.jpg`, accent: '#b9782d' },
+  { title: 'CHRONA', image: `${ASSET_BASE}/projects/chrona-bio.jpg`, accent: '#43c9a4' },
+  { title: 'FORMA OS', image: `${ASSET_BASE}/projects/forma-os.jpg`, accent: '#806be8' },
+  { title: 'LAJEVARD', image: `${ASSET_BASE}/projects/lajevard-tea-house.jpg`, accent: '#d0a540' },
+  { title: 'AETHER', image: `${ASSET_BASE}/projects/aether.jpg`, accent: '#637cf0' },
 ];
 
 export const HERO_HANDOFF_END = 0.225;
