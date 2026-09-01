@@ -9,7 +9,7 @@ const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? '';
 const assetVars = ASSET_BASE
   ? {
       '--font-manrope-url': `url('${ASSET_BASE}/fonts/manrope.woff2')`,
-      '--font-vazir-url': `url('${ASSET_BASE}/fonts/Vazir.woff2')`,
+      '--font-vazirmatn-url': `url('${ASSET_BASE}/fonts/vazirmatn.woff2')`,
       '--palace-bg-url': `url('${ASSET_BASE}/images/palace-bg-1920.webp')`,
       '--cursor-idle-url': `url('${ASSET_BASE}/cursors/luxury-gold-cursor.svg')`,
       '--cursor-active-url': `url('${ASSET_BASE}/cursors/luxury-gold-interactive-v2.svg')`,
