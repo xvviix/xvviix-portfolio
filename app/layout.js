@@ -3,18 +3,9 @@ import './globals.css';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://xvviix.github.io/xvviix-portfolio';
 // Public-asset URL prefix: empty for dev/Vercel (site at root),
 // '/xvviix-portfolio' for the GitHub Pages build (subpath repo).
+// globals.css references public assets with root-absolute urls; the
+// GitHub build post-processes them via scripts/prefix-assets.mjs.
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? '';
-// Prefixed asset URLs, injected as CSS variables so globals.css (which is
-// shared between builds) can reference public assets with the right prefix.
-const assetVars = ASSET_BASE
-  ? {
-      '--font-manrope-url': `url('${ASSET_BASE}/fonts/manrope.woff2')`,
-      '--font-vazirmatn-url': `url('${ASSET_BASE}/fonts/vazirmatn.woff2')`,
-      '--palace-bg-url': `url('${ASSET_BASE}/images/palace-bg-1920.webp')`,
-      '--cursor-idle-url': `url('${ASSET_BASE}/cursors/luxury-gold-cursor.svg')`,
-      '--cursor-active-url': `url('${ASSET_BASE}/cursors/luxury-gold-interactive-v2.svg')`,
-    }
-  : undefined;
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -97,13 +88,15 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning style={assetVars}>
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Apply the returning visitor's language before first paint —
-            prevents an LTR/EN flash for returning Persian users. */}
+            prevents an LTR/EN flash for returning Persian users. A Persian
+            visitor also gets the Vazirmatn preload injected (relative url,
+            so it resolves correctly on the GitHub Pages subpath). */}
         <script
           dangerouslySetInnerHTML={{
-            __html: "try{if(localStorage.getItem('xvviix-lang')==='fa'){document.documentElement.lang='fa';document.documentElement.dir='rtl';}}catch(e){}",
+            __html: "try{if(localStorage.getItem('xvviix-lang')==='fa'){document.documentElement.lang='fa';document.documentElement.dir='rtl';var l=document.createElement('link');l.rel='preload';l.as='font';l.type='font/woff2';l.crossOrigin='anonymous';l.href='fonts/vazirmatn.woff2';document.head.appendChild(l);}}catch(e){}",
           }}
         />
         <link rel="preload" href={`${ASSET_BASE}/fonts/manrope.woff2`} as="font" type="font/woff2" crossOrigin="anonymous" />
