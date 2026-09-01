@@ -100,66 +100,66 @@ const translations = {
       {
         pillar: 'ستون ۰۱ · چشم‌انداز',
         tag: 'کاملاً اختصاصی',
-        title: 'ذهن جوان؛ اجرای جدی.',
+        title: 'ذهن جوان؛ حرفه‌دستی جدی.',
         copy: 'من متینم؛ توسعه‌دهنده‌ای خلاق که ایده‌های بلندپروازانه را به دنیاهای دیجیتال متمایز و صاحب شخصیت تبدیل می‌کند.',
       },
       {
         pillar: 'ستون ۰۲ · معماری',
-        tag: '۶۰ فریم پایدار',
-        title: 'کد تمیز؛ سرعت فوق‌العاده.',
-        copy: 'مهندسی‌شده از پایه با Next.js مدرن و WebGL خالص. بدون قالب‌های آماده، بدون کدهای اضافه و با پرفورمنس حداکثری.',
+        tag: 'روانیِ ۶۰ فریم',
+        title: 'کد تمیز؛ سرعت آنی.',
+        copy: 'از پایه مهندسی‌شده با Next.js مدرن و WebGL خالص — بدون قالب آماده، بدون حجم اضافه و با بارگذاری زیر یک ثانیه.',
       },
       {
         pillar: 'ستون ۰۳ · اصالت',
-        tag: 'هویت اصیل',
-        title: 'هیچ‌وقت از یک قالب آماده.',
-        copy: 'هر سیستم بصری از هویت برند شما، روانشناسی مخاطب و یک ایدهٔ ماندگار شکل می‌گیرد که در یادها ثبت شود.',
+        tag: 'روح اختصاصی',
+        title: 'هرگز از قالب آماده.',
+        copy: 'هر سیستم بصری از هویت برند، مخاطبش و یک ایدهٔ جسورانه شکل می‌گیرد — ایده‌ای که در یادها می‌ماند.',
       },
       {
         pillar: 'ستون ۰۴ · سه‌بعدی بلادرنگ',
-        tag: 'عمق و شیدرها',
+        tag: 'عمقِ WebGL',
         title: 'طراحی و کد، کنار هم.',
-        copy: 'یک مسیر یکپارچه از کارگردانی هنری تا شیدرهای سفارشی و فیزیک سه‌بعدی بدون گم‌شدن ایده میان طراحی و اجرا.',
+        copy: 'یک مسیر یکپارچه از کارگردانی هنری تا شیدرهای سفارشی و فیزیک سه‌بعدی بلادرنگ — از ایدهٔ نخست تا انتشار، بدون شکاف میان طراحی و اجرا.',
       },
       {
-        pillar: 'ستون ۰۵ · کارایی و نتیجه',
+        pillar: 'ستون ۰۵ · تأثیر',
         tag: 'حداکثر تبدیل',
         title: 'زیبایی باید موثر باشد.',
-        copy: 'استانداردهای بصری پیشرفته در کنار شفافیت کامل تجربهٔ کاربر — تبدیل توجه مخاطب به اقدام و نتیجهٔ واقعی.',
+        copy: 'استانداردهای زیبایی‌شناختیِ بالا همراه با شفافیتِ پی‌درپی در تجربهٔ کاربر — که توجهِ لحظه‌ای را به اقدام و نتیجهٔ واقعی می‌گمارد.',
       },
       {
         pillar: 'ستون ۰۶ · همکاری',
         tag: 'افق تازه',
-        title: 'بیایید اثری ماندگار بسازیم.',
-        copy: 'ایده‌ات را بیاور؛ با هم هویت، حرکت و معماری را به وب‌سایتی تبدیل می‌کنیم که کسی نتواند ساده از کنارش رد شود.',
+        title: 'بیایید اثری بسازیم که به یاد بماند.',
+        copy: 'ایده‌ات را همراه بیاور؛ با هم هویت، حرکت و معماری را به تجربه‌ای می‌سپاریم که کسی نتواند بی‌تفاوت از کنارش رد شود.',
       },
     ],
     serviceTag: 'تخصص‌ها / ساخت تجربه',
-    serviceTitle: 'اول، ساختار.<br/><em>بعد، جان.</em>',
+    serviceTitle: 'اول، ساختار.<br/><em>بعد، جان‌بخشی.</em>',
     servicePhases: [
       { title: 'ساخت پایه', copy: 'گرید، سلسله‌مراتب و اسکلت واکنش‌گرا ابتدا شکل می‌گیرد.', meta: '۰۱ / در حال ساخت' },
-      { title: 'رنگ و طراحی', copy: 'رنگ، تایپوگرافی و حرکت به ساختار، شخصیت بصری می‌دهند.', meta: '۰۲ / در حال طراحی' },
+      { title: 'رنگ و طراحی', copy: 'رنگ، تایپوگرافی و حرکت، صدای بصری به ساختار می‌بخشند.', meta: '۰۲ / در حال طراحی' },
       { title: 'آنلاین‌سازی', copy: 'تجربهٔ نهایی از استودیو خارج می‌شود و به جهان می‌رسد.', meta: '۰۳ / پیش‌نمایش آنلاین' },
     ],
-    aboutTag: 'پشت XVVIIX',
+    aboutTag: 'پشت صحنهٔ XVVIIX',
     aboutTitle: 'منطق در کد؛<br/><em>غریزه در طراحی.</em>',
-    aboutLead: 'من متینم؛ یک توسعه‌دهندهٔ خلاق مستقل که روی تجربه‌های دیجیتال زیبا، متفاوت و کاربردی تمرکز دارد.',
+    aboutLead: 'من متینم؛ یک توسعه‌دهندهٔ خلاق مستقل که کارهای دیجیتالش هم چشم‌نواز است و هم در دنیای واقعی جواب می‌دهد.',
     aboutBody:
-      'وب‌سایت‌های غوطه‌ور و محصولات تعاملی را از اول تا آخر — از اولین اسکیس کارگردانی هنری تا آخرین خط کد پروداکشن — خودم طراحی و می‌سازم. هر پروژه مهندسیِ سفارشی‌ست؛ بدون قالب آماده، بدون صفحه‌ساز، بدون سیستم قرض‌گرفته — با آن جنس حرکت، عمق و جزئیات که فقط وقتی پدید می‌آید که خودت تک‌تک پیکسل‌ها را بنویسی.',
+      'وب‌سایت‌ها و محصولات تعاملیِ غوطه‌ور را از اول تا آخر — از اولین اسکِچِ کارگردانی هنری تا آخرین خط کدِ آمادهٔ انتشار — خودم طراحی و می‌سازم. هر پروژه مهندسیِ سفارشی‌ست؛ بدون قالب آماده، بدون صفحه‌ساز، بدون سیستم قرض‌گرفته — با آن جنس حرکت، عمق و جزئیات که فقط وقتی پدید می‌آید که خودت تک‌تک پیکسل‌ها را بنویسی.',
     aboutSkills: [
-      ['Next.js / React', 'اپلیکیشن‌های درجهٔ تولید با SSR، Streaming و TTI زیر یک ثانیه روی Next.js و React ۱۹ مدرن.'],
+      ['Next.js / React', 'اپلیکیشن‌های آمادهٔ محیط تولید با SSR، Streaming و TTI زیر یک ثانیه، روی Next.js و React ۱۹ مدرن.'],
       ['WebGL / Three.js', 'شیدرهای سفارشی، Post-Processing و صحنه‌های سه‌بعدی بلادرنگ با React Three Fiber — طوری که روی دستگاه‌های واقعی ۶۰ فریم بماند.'],
-      ['کارگردانی هنری', 'سیستم‌های بصری تایپوگرافی‌محور، کمپوزیسیون ادیتوریال طلایی و زبان حرکتی که فقط برازندهٔ همان برند است.'],
+      ['کارگردانی هنری', 'سیستم‌های بصریِ تایپوگرافی‌محور، کمپوزیسیون ادیتوریالِ دههٔ طلایی و زبانی از حرکت که فقط برازندهٔ همان برند است.'],
       ['دوزبانه / RTL', 'انگلیسی و فارسی کنار هم — با تایپوگرافی درست وزیرمتن، چیدمان آینه‌ای و بدون مشکل فاصلهٔ حروف.'],
     ],
     statProjects: 'پروژهٔ عمومی', statSites: 'تجربهٔ آنلاین', statLanguages: 'زبان',
     processTag: 'روند همکاری', processTitle: 'مسیر روشن؛<br/><em>نتیجهٔ کمیاب.</em>',
     process: [
-      ['شناخت', 'هدف، مخاطب، محتوا و حسی را که برندتان باید در ذهن باقی بگذارد مشخص می‌کنیم.', '۱—۲ روز'],
-      ['طراحی و ساخت', 'کارگردانی هنری، تعامل و کد نهایی به‌عنوان یک سیستم یکپارچه پیش می‌روند.', '۱—۳ هفته'],
-      ['پرداخت و انتشار', 'تمام صفحه‌ها تست، جزئیات صیقل داده و تجربهٔ نهایی با سرعت منتشر می‌شود.', '۲—۳ روز'],
+      ['شناخت', 'هدف، مخاطب، محتوا و حسی را که برند باید در ذهن مخاطب جا بماند، مشخص می‌کنیم.', '۱—۲ روز'],
+      ['طراحی و ساخت', 'کارگردانی هنری، تعامل و کدِ تولید، همه به‌عنوان یک سیستم یکپارچه رشد می‌کنند.', '۱—۳ هفته'],
+      ['صیقل و انتشار', 'هر صفحه تست می‌شود، هر جزئیات صیقل می‌خورد و تجربهٔ نهایی با سرعت به انتشار می‌رسد.', '۲—۳ روز'],
     ],
-    contactTag: 'پذیرش پروژهٔ جدید',
+    contactTag: 'در حال پذیرش پروژهٔ جدید',
     contactTitle: 'ایده‌ات را<br/><em>واقعی کن.</em>',
     contactCopy: 'یک ایدهٔ بلندپروازانه داری؟ از چیزی که می‌خواهی بسازی بگو. نسخه‌ای می‌سازیم که کسی نتواند ساده از کنارش رد شود.',
     contactCta: 'ارسال بریف',
@@ -169,16 +169,16 @@ const translations = {
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? '';
 
 const projects = [
-  { title: 'DASTIN', category: { en: 'BRAND EXPERIENCE / 2026', fa: 'تجربهٔ برند / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/Dastin.jpg`, alt: 'Dastin premium Persian food brand website', url: 'https://xvviix.github.io/Dastin/', tags: ['RTL', 'Art direction', 'Vanilla JS'], description: { en: 'A premium Persian food brand built through nature, story and quiet cinematic motion.', fa: 'یک برند غذایی پریمیوم ایرانی که با طبیعت، روایت و حرکت‌های سینمایی آرام شکل گرفته است.' } },
-  { title: 'CHRONA', category: { en: 'HEALTH INTELLIGENCE / 2026', fa: 'هوش سلامت / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/chrona-bio.jpg`, alt: 'Chrona biological age platform', url: 'https://xvviix.github.io/chrona-bio/', tags: ['Data UI', 'Interactive', 'Health tech'], description: { en: 'Biological age intelligence translated into a precise, editorial clinical interface.', fa: 'هوش سن زیستی که به یک رابط بالینی دقیق، روایی و تعاملی تبدیل شده است.' } },
-  { title: 'FORMA OS', category: { en: 'SOFTWARE PLATFORM / 2026', fa: 'پلتفرم نرم‌افزار / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/forma-os.jpg`, alt: 'Forma software platform website', url: 'https://xvviix.github.io/forma-os/', tags: ['SaaS', 'Product', 'Conversion'], description: { en: 'A sharp launch experience for ambitious software teams with product clarity at its core.', fa: 'یک تجربهٔ معرفی دقیق برای تیم‌های نرم‌افزاری بلندپرواز، با تمرکز اصلی روی وضوح محصول.' } },
-  { title: 'LAJEVARD', category: { en: 'PERSIAN HOSPITALITY / 2026', fa: 'مهمان‌نوازی ایرانی / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/lajevard-tea-house.jpg`, alt: 'Lajevard Persian tea house website', url: 'https://xvviix.github.io/lajevard-tea-house/', tags: ['Editorial', 'RTL', 'Hospitality'], description: { en: 'An editorial digital home for a Tehran tea house, dressed in midnight blue and gold.', fa: 'خانه‌ای دیجیتال و روایی برای یک چایخانهٔ تهرانی، پوشیده در لاجورد و طلا.' } },
-  { title: 'AETHER', category: { en: 'AI PLATFORM / 2026', fa: 'پلتفرم هوش مصنوعی / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/aether.jpg`, alt: 'Aether premium AI platform website', url: 'https://xvviix.github.io/aether/', tags: ['AI', 'Platform', 'Product'], description: { en: 'A premium AI platform experience shaped for elite developers and ambitious product teams.', fa: 'تجربه‌ای پریمیوم برای یک پلتفرم هوش مصنوعی، ویژهٔ توسعه‌دهندگان و تیم‌های محصول بلندپرواز.' } },
+  { title: 'DASTIN', category: { en: 'BRAND EXPERIENCE / 2026', fa: 'تجربهٔ برند / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/Dastin.jpg`, alt: 'Dastin premium Persian food brand website', url: 'https://xvviix.github.io/Dastin/', tags: ['RTL', 'Art direction', 'Vanilla JS'], description: { en: 'A premium Persian food brand built through nature, story and quiet cinematic motion.', fa: 'یک برند غذایی پریمیوم ایرانی، ساخته‌شده از طبیعت، روایت و حرکتِ سینماییِ آرام.' } },
+  { title: 'CHRONA', category: { en: 'HEALTH INTELLIGENCE / 2026', fa: 'هوش سلامت / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/chrona-bio.jpg`, alt: 'Chrona biological age platform', url: 'https://xvviix.github.io/chrona-bio/', tags: ['Data UI', 'Interactive', 'Health tech'], description: { en: 'Biological age intelligence translated into a precise, editorial clinical interface.', fa: 'هوش سن زیستی که در یک رابط بالینیِ دقیق، ادیتوریال و تعاملی ترجمه شده است.' } },
+  { title: 'FORMA OS', category: { en: 'SOFTWARE PLATFORM / 2026', fa: 'پلتفرم نرم‌افزار / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/forma-os.jpg`, alt: 'Forma software platform website', url: 'https://xvviix.github.io/forma-os/', tags: ['SaaS', 'Product', 'Conversion'], description: { en: 'A sharp launch experience for ambitious software teams with product clarity at its core.', fa: 'تجربه‌ای تیز و بی‌نقص برای رونمایی از محصول؛ ویژهٔ تیم‌های نرم‌افزاری بلندپرواز با وضوحِ محصول در مرکز.' } },
+  { title: 'LAJEVARD', category: { en: 'PERSIAN HOSPITALITY / 2026', fa: 'مهمان‌نوازی ایرانی / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/lajevard-tea-house.jpg`, alt: 'Lajevard Persian tea house website', url: 'https://xvviix.github.io/lajevard-tea-house/', tags: ['Editorial', 'RTL', 'Hospitality'], description: { en: 'An editorial digital home for a Tehran tea house, dressed in midnight blue and gold.', fa: 'خانه‌ای دیجیتال و ادیتوریال برای یک چایخانهٔ تهرانی، پوشیده از رنگِ لاجورد و طلا.' } },
+  { title: 'AETHER', category: { en: 'AI PLATFORM / 2026', fa: 'پلتفرم هوش مصنوعی / ۲۰۲۶' }, image: `${ASSET_BASE}/projects/aether.jpg`, alt: 'Aether premium AI platform website', url: 'https://xvviix.github.io/aether/', tags: ['AI', 'Platform', 'Product'], description: { en: 'A premium AI platform experience shaped for elite developers and ambitious product teams.', fa: 'تجربه‌ای پریمیوم برای یک پلتفرم هوش مصنوعی — در خدمت توسعه‌دهندگان برتر و تیم‌های محصولِ بلندپرواز.' } },
 ];
 
 const projectTypes = {
   en: ['Portfolio', 'Brand Website', 'Landing Page', 'Web Application', 'E-commerce', 'Interactive / WebGL', 'Redesign', 'Other'],
-  fa: ['پورتفولیو', 'وب‌سایت برند', 'لندینگ پیج', 'وب‌اپلیکیشن', 'فروشگاه آنلاین', 'تجربه تعاملی / وب‌جی‌اسال', 'ری‌دیزاین', 'سایر'],
+  fa: ['پورتفولیو', 'وب‌سایت برند', 'لندینگ پیج', 'وب‌اپلیکیشن', 'فروشگاه آنلاین', 'تجربهٔ تعاملی / WebGL', 'ری‌دیزاین', 'سایر'],
 };
 const budgetTiers = {
   en: ['Starter', 'Professional', 'Premium'],
@@ -524,10 +524,10 @@ export default function Portfolio() {
     copyWithToast(
       text,
       lang === 'fa'
-        ? 'بریف کپی شد ✅ — توی چت فقط Paste (Ctrl+V) کنید.'
+        ? 'بریف کپی شد ✅ — فقط توی چت Paste (Ctrl+V) بزن.'
         : 'Brief copied ✅ — just paste it in the chat (Ctrl+V).',
       lang === 'fa'
-        ? 'پروفایل باز شد — لطفاً بریف را با دست در چت بنویسید.'
+        ? 'پروفایل باز شد — لطفاً بریف را دستی توی چت بنویس.'
         : 'Profile opened — please write the brief in the chat.',
     );
   };
@@ -553,7 +553,7 @@ export default function Portfolio() {
     copyWithToast(
       inquiry.text,
       lang === 'fa' ? 'درخواست کپی شد ✅ — هر جا خواستی Paste کن.' : 'Brief copied ✅ — paste it anywhere.',
-      lang === 'fa' ? 'کپی ممکن نبود — لطفاً دستی کپی کنید.' : 'Copy failed — please copy it manually.',
+      lang === 'fa' ? 'کپی ممکن نبود — لطفاً دستی کپی کن.' : 'Copy failed — please copy it manually.',
     );
   };
 
@@ -607,14 +607,14 @@ export default function Portfolio() {
                       type="button"
                       onClick={() => setSelectedCase(index)}
                     >
-                      {lang === 'fa' ? 'مشاهدهٔ مطالعهٔ موردی' : 'View case study'}
+                      {lang === 'fa' ? 'مشاهدهٔ کیس استادی' : 'View case study'}
                     </button>
                     <a
                       href={project.url}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      {lang === 'fa' ? 'بازکردن سایت' : 'Open live website'} ↗
+                      {lang === 'fa' ? 'باز کردن سایت' : 'Open live website'} ↗
                     </a>
                   </div>
                 </article>
@@ -624,7 +624,7 @@ export default function Portfolio() {
                 <h2>{lang === 'fa' ? 'هر لایه، یک فرآیند.' : 'Every layer. One process.'}</h2>
                 <p>
                   {lang === 'fa'
-                    ? 'از ساختار و رابط تا موشن و سه‌بعدی؛ تمام تجربه با یک نگاه یکپارچه طراحی و اجرا می‌شود.'
+                    ? 'از ساختار و رابط کاربری تا حرکت و سه‌بعدی بلادرنگ؛ همهٔ این تجربه به‌عنوان یک سیستم یکپارچه طراحی و ساخته می‌شود.'
                     : 'From structure and interface to motion and real-time 3D, every part of the experience is designed and built as one system.'}
                 </p>
               </section>
@@ -803,7 +803,7 @@ export default function Portfolio() {
               target="_blank"
               rel="noreferrer"
             >
-              {lang === 'fa' ? 'مشاهدهٔ نسخهٔ آنلاین' : 'Open live website'} ↗
+              {lang === 'fa' ? 'باز کردن نسخهٔ آنلاین' : 'Open live website'} ↗
             </a>
           </article>
         </div>
